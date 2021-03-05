@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+
+
+.title{
+  font-family:"Rock Salt", cursive;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+body,html{
+  font-family:"abel", sans-serif;
+  text-align:center;
+  min-width:260px;
+  color:white;
+  background-color:transparent;
+}
+
+body{
+  font-size:1.3em;
+  background: linear-gradient(rgba(0, 0, 0,0.75), rgba(0, 0, 0, 0.95)), url(https://hellpcfiles.files.wordpress.com/2017/04/top-10-geek-desktop-wallpapers-free-download-7.jpg)
+    center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+}
+
+.text-box{
+  background-color: rgba(255,217,15,0.28);
+  border-radius: 30px;
+  margin: 2em auto;
+  padding: 25px;
+  width: 85%;
+}
+
+h1 {
+  margin: 2;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 5px;
+  word-spacing: 0.1em;
+  line-height: 0.2em;
+  font-weight: bold;
+}
+
+p {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+
+hr {
+  width: 60%;
+  margin: 8px auto;
+}
+
+.container {
+  background-color: rgba(79, 118, 223, 0.28);
+  border-radius: 20px;
+  margin: auto;
+  width: 87.23%;
+  padding: 1em;
+}
+
+#survey-form {
+  margin: 0 auto;
+  width: 70%;
+  padding: 5px;
+}
+
+.labels {
+  display: inline-block;
+  text-align: left;
+  width: 40%;
+  vertical-align: top;
+  margin-top: 18px;
+  padding: 5px;
+}
+
+.input-tab {
+  display: inline-block;
+  text-align: left;
+  width: 50%;
+  margin-left: 10px;
+}
+
+.input-field {
+  display: inline-block;
+  width: 110%;
+  padding: 5px;
+  margin: 18px  0 10px;
+  border: 1px solid yellow;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+::-webkit-input-placeholder {
+   font-style: italic;
+  font-weight: 300;
+}
+
+input {
+  margin: 7px;
+}
+
+#dropdown {
+  width: 60%;
+  padding: 5px;
+  margin: 20px 0 10px 10px;  
+  border: 1px solid yellow;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+
+
+.btn {
+  width: 100%;
+  text-align: center;
+  margin: 25px;
+}
+
+button {
+  background-color: green;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: inherit;
+  padding: 10px 15px;
+  border: 1px solid;
+}
+
+button:hover {
+  background-color: rgba(79, 118, 223, 0.28);
+}
+
+footer {
+  text-align: center;
+  font-size: 17px;
+  margin: 20px;
+  background-color: #ff00ddab;
+  position: relative;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  body{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://hellpcfiles.files.wordpress.com/2017/04/top-10-geek-desktop-wallpapers-free-download-7.jpg) center no-repeat fixed;
+  background-size: cover;
+}
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .input-tab {
+    width: 100%;
+    float: left;
+    
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+    margin: auto;
+  }
+}

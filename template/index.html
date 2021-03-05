@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  
+  <!--JAVASCRIPT-->
+  <script type="text/javascript" src="{% static 'Javascript/main.js' %}"></script>
+  
+  <!--css-->
+  <link rel="stylesheet" href="{% static 'CSS/main.css' %}" type="text/css" media="all">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Lobster|Merienda|Merienda+One|Orbitron|Quicksand|Raleway" rel="stylesheet">
+  
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <div class="container">
+    <div id="content">
+      <h1 id="title" class="text-center">Survey Form For a Developer</h1>
+      <br>
+      <p id="description" class="text-center">Tell us about your experience as a developer</p>
+<br>
+      <form id="survey-form" method="POST" action="">
+        {% csrf_token %}
+            <div class="labels">
+              <label id="name-label" for="name">&#8727; Name</label></div>
+              <div class="input-tab">
+              <input type="text" id="name" class="input-field"  name = "name" placeholder="enter your name" autofocus required />
+            </div>
+            <div class="labels">
+              <label id="email-label" for="mail">&#8727; E-mail</label></div>
+              <div class="input-tab">
+              <input type="email"  name= "email" id="email" class="input-field" placeholder="enter your email" required />
+            </div>
+            
+            <div class="labels">
+              <label id="number-label" for="number">&#8727;Your Age</label>
+            </div>
+            <div class="input-tab">
+              <input type="number" name= "age" min="1" max="130" id="number" class="input-field" placeholder="enter your age" required />
+            </div>
+          
+            <!--div class="labels">
+              <label id="dropdown-label" for="dropdown">Your Current role</label></div>
+              <div class="input-tab">
+              <select id="dropdown" class="form-control form-control-sm" name='ch'>
+                <option value="" disabled selected>select an option...</option>
+                <option>Student</option>
+                <option>FrontEnd-developer</option>
+                <option>BackEnd-developer</option>
+                <option>Prefer not to say</option>
+                <option>Other</option>
+              </select>
+            </div-->            
+          
+        
+        
+            <!--div class="labels">
+              <label id="stars-label" for="dropdown">
+                &#8727; On a scale from 1 to 5, how many stars would you rate self as a developer? 
+              </label></div>
+              <div class="input-tab">
+              <select id="dropdown" name= 'ch1'>
+                <option value="" disabled selected>select an option...</option>
+                <option>5 &#9733; &#9733; &#9733; &#9733; &#9733; excellent</option>
+                <option>4 &#9733; &#9733; &#9733; &#9733;</option>
+                <option>3 &#9733; &#9733; &#9733; satisfactory</option>
+                <option>2 &#9733; &#9733;</option>
+                <option>1 &#9733; worst</option>
+              </select -->
+            
+            
+            
+              
+            
+          <div class="labels">
+              <label for="comments">Your feedback is appreciated, so don't forget to give us your additional comments:</label></div>
+              <div class="input-tab">
+              <textarea class="input-field" name="feedback" id="textarea" rows="11" placeholder="enter your message..."></textarea>
+              <small id="submitHelp" class="form-text">&#8727; We'll never share your data with anyone else for privacy reasons.</small>
+            </div> 
+        
+            <div class="btn">
+            <button id="submit" type="submit">Submit</button>            
+          </div>
+      </form>
+   <hr>
+  <div id="footer">
+    <h6>Designed and coded by NAKIJJO ELIZABETH ©2018 - All Rights Reserved WIT CYCLE 3
+    </h6>
+  </div>
+</body>
+</html>
