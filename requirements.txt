@@ -31,4 +31,4 @@ static3==0.7.0
 urllib3==1.25.8
 webencodings==0.5.1
 whitenoise==5.2.0
-psycopg2 = 2.0.7
+psycopg2 == 2.0.7
