@@ -26,7 +26,7 @@ SECRET_KEY = '^6zh-)9ekuu^+x!%252#84)8ubo9u*bmhyld!jiughxg$w0cu6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mysurveydjangoapp.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
